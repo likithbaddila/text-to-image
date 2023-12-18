@@ -1,11 +1,7 @@
 import streamlit as st
-import openai,dotenv
+import openai
 import os
-from dotenv import load_dotenv
 
-
-
-openai.api_key = os.environ.get("api_key")
 from openai import OpenAI
 client = OpenAI(api_key=os.environ.get("api_key"))
 
